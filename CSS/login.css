@@ -1,0 +1,206 @@
+/* login.css */
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    background: url('../img/casino.webp') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    color: #ffffff;
+}
+
+/* Overlay para oscurecer la imagen de fondo y mejorar legibilidad */
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(15, 15, 15, 0.6); /* Ajusta la opacidad */
+    z-index: 1;
+}
+
+.container {
+    position: relative;
+    z-index: 2;  /* Para que el formulario quede encima del overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+/* Caja principal del login */
+.login-box {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding: 40px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}
+
+/* Título */
+.login-box h1 {
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+.login-box h1 span {
+    color: #ffcc00; /* Ejemplo de color dorado para el "Casino" */
+}
+
+/* Subtítulo */
+.subtitle {
+    font-weight: 300;
+    font-size: 14px;
+    margin-bottom: 30px;
+    opacity: 0.8;
+}
+
+/* Formulario */
+.form-login {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+/* Grupo de inputs */
+.input-group {
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
+}
+
+/* Botón de iniciar sesión */
+.btn-login {
+    padding: 14px;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-login:hover {
+    background-color: #ffb300;
+}
+
+/* Recordar contraseña & Olvidaste tu contraseña */
+.extra-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    margin-top: -10px;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.forgot-pass {
+    color: #ffcc00;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.forgot-pass:hover {
+    color: #ffb300;
+}
+
+/* Social login */
+.social-login {
+    margin-top: 20px;
+}
+
+.social-login p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.btn-social {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #fff;
+    color: #333;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.btn-social img {
+    width: 18px;
+    height: 18px;
+}
+
+/* Colores para Facebook y Twitter */
+.facebook {
+    background-color: #4267B2;
+    color: #fff;
+}
+
+.facebook:hover {
+    background-color: #36538c;
+}
+
+.google {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.google:hover {
+    background-color: #8b8c8d;
+}
+
+/* Registrarse */
+.register {
+    margin-top: 25px;
+    font-size: 14px;
+}
+
+.register a {
+    color: #ffcc00;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.register a:hover {
+    color: #ffb300;
+}
+
+span{
+    color: #ffb300;
+}
