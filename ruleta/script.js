@@ -52,9 +52,9 @@ function spinWheel() {
   const winningNumber = Math.floor(Math.random() * 37);
   const segmentDeg = 360 / 37;
 
-  // Aumentamos el número de vueltas y aplicamos un pequeño desplazamiento aleatorio adicional
+ 
   const spins = Math.floor(Math.random() * 5) + 8; // mínimo 8 vueltas, máximo 12
-  const randomOffset = Math.random() * segmentDeg; // para mayor realismo en el frenado
+  const randomOffset = Math.random() * segmentDeg; 
   deg = (360 * spins) + ((36 - winningNumber) * segmentDeg) + randomOffset;
 
   wheel.style.transform = `rotate(${deg}deg)`;

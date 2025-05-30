@@ -5,9 +5,9 @@ const debug = document.getElementById('debug');
 const symbols = ['🍒', '🍋', '🍊', '🍇', '🍉', '⭐', '🔔', '7️⃣'];
 
 let balance = 1000;
-let bet = 10; // Default bet
+let bet = 10; 
 
-// Create UI for balance and bet
+
 const uiContainer = document.createElement('div');
 uiContainer.innerHTML = `
   <label>Apuesta:
@@ -51,7 +51,7 @@ function spinSlots() {
         clearInterval(spinInterval);
         results[i] = symbol;
 
-        // When all reels are done spinning
+      
         if (results.length === 3 && results.every((val) => val)) {
           setTimeout(() => evaluateResult(results), 500);
         }
