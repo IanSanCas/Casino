@@ -1,3 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Casino Login</title>
+    <!-- Enlazar la hoja de estilos -->
+    <link rel="stylesheet" href="../CSS/login.css">
+    <!-- Fuente de Google Fonts (opcional) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" 
+        rel="stylesheet"
+    >
+</head>
+<body>
+<div class="background-overlay"></div>
+    <div class="container">
+        <!-- Sección para la imagen de fondo y el overlay -->
+        
+        
+        <!-- Contenedor del formulario -->
+        <div class="login-box">
+            <h1>Bienvenido a <span><br>Mola Casino</span></h1>
+
 <?php
 // process_login.php
 session_start();
@@ -29,3 +54,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     exit();
 }
 ?>
+
+</div>
+    </div>
+</body>
+</html>
